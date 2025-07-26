@@ -1,36 +1,55 @@
+# 🛒 E-Commerce Store (Next.js, Stripe & FantaCSS)
+
+A full-stack e-commerce store built using **Next.js**, **Stripe**, and **FantaCSS**, featuring product listings, a shopping cart, and secure Stripe payments.
+
+> 🔧 This project was inspired by a full-stack course I completed. It helped me solidify concepts around building full-stack applications with modern technologies.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ⚡ Blazing-fast performance with **Next.js**
+- 💳 Stripe-powered checkout integration
+- 🛍️ Dynamic product listings & detail views
+- 🛒 Persistent shopping cart
+- 🎨 Styled using **FantaCSS**
+- ☁️ Deployed to **AWS Amplify**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Tech Stack
 
-## Learn More
+- **Frontend:** Next.js, React, FantaCSS
+- **Backend:** Next.js API Routes
+- **Payments:** Stripe.js
+- **Deployment:** AWS Amplify
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally:
 
-## Deploy on Vercel
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ecommerce-store.git
+   cd ecommerce-store
+   
+2. **Install Dependencies**
+   ```bash
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Setup environment variables**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  	Create a .env.local file in the root directory and add the necessary keys for Stripe and any other services you use.
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+
+5. **Open local browser**
+    ```bash
+    http://localhost:3000 
+
