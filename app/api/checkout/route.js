@@ -1,7 +1,7 @@
 import Stripe from "stripe"
 import '../../../envConfig.js'
 
-const API_KEY = process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY
+const API_KEY = process.env.STRIPE_SECRET_KEY
 const stripe = new Stripe(API_KEY, {
     apiVersion:'2023-10-16'
 })  // Allows us the Stripe entity to interact with  our products.
@@ -21,5 +21,5 @@ export async function POST(request) {
     } catch (err) {
         console.error('Error creating cart checkout: ', err.message)
         return Response.json({error: 'Failed to stripe checkout page'})
-    }
+    }So 
 }
