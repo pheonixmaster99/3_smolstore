@@ -2,8 +2,8 @@ import ImageBanner from "@/components/ImageBanner";
 import Products from "@/components/Products";
 
 export async function getProducts() {
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL
-  const response = await fetch(baseURL + '/api/products') // url for our endpoint to locate us to the GET request in the route.js file.
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL 
+  const response = await fetch('/api/products') // url for our endpoint to locate us to the GET request in the route.js file.
   const products = await response.json()
   return products
 }
