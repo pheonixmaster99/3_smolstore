@@ -1,8 +1,10 @@
 import Stripe from "stripe"
 import '../../../envConfig.js'
 
-const API_KEY = process.env.STRIPE_SECRET_KEY
-const stripe = new Stripe(API_KEY)  // Allows us the Stripe entity to interact with  our products.
+const API_KEY = process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY
+const stripe = new Stripe(API_KEY, {
+    apiVersion:'2023-10-16'
+})  // Allows us the Stripe entity to interact with  our products.
 
 // NextJS knows to interpet the bottom code as the GET endpoint to run, when we receive a request from the client on this route.js file. 
 // The syntax below is SPECIFIC to the app route. 

@@ -1,8 +1,10 @@
 import Stripe from "stripe"
 import '../../../envConfig.js'
 
-const API_KEY = process.env.STRIPE_SECRET_KEY
-const stripe = new Stripe(API_KEY)  // Allows us the Stripe entity to interact with  our products.
+const API_KEY = process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY
+const stripe = new Stripe(API_KEY, {
+    apiVersion:'2023-10-16'
+})  // Allows us the Stripe entity to interact with  our products.
 
 export async function POST(request) {
     try {
