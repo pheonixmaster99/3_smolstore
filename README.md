@@ -15,7 +15,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - 🛍️ Dynamic product listings & detail views
 - 🛒 Persistent shopping cart
 - 🎨 Styled using **FantaCSS**
-- ☁️ Deployed to **AWS Amplify**
+
 
 ---
 
@@ -24,7 +24,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **Frontend:** Next.js, React, FantaCSS
 - **Backend:** Next.js API Routes
 - **Payments:** Stripe.js
-- **Deployment:** AWS Amplify
 
 ---
 
